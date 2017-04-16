@@ -44,6 +44,8 @@ class ViewController: UIViewController {
             
         }
         
+        lblOutputLabetOUTLET.text = "0"
+        
     }
     
     @IBAction func numberPressed(sender: UIButton) {
@@ -83,6 +85,8 @@ class ViewController: UIViewController {
     }
     
     func processOperation(operation: Operation) {
+        playSound()
+        
         if currentOperation != Operation.Empty {
             
             // User selected and operator, but then selected another operator without entering a number
@@ -91,16 +95,16 @@ class ViewController: UIViewController {
                 runningNumber = ""
                 
                 if currentOperation  == Operation.Multiply {
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! * Int(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Divide {
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! / Int(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Subtract {
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! - Int(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Add {
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                    result = "\(Int(leftValStr)! + Int(rightValStr)!)"
                     
                 }
                 

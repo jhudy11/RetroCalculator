@@ -43,8 +43,8 @@
                                     <constraint firstAttribute="height" constant="70" id="eyd-gh-NgJ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cP-tK-hBN">
-                                <rect key="frame" x="222" y="33.5" width="47.5" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cP-tK-hBN">
+                                <rect key="frame" x="258" y="33.5" width="11.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -255,6 +255,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V7h-R2-ZUy" firstAttribute="top" secondItem="jdH-9e-ucR" secondAttribute="bottom" constant="8" id="6CB-8S-gG3"/>
+                            <constraint firstItem="V7h-R2-ZUy" firstAttribute="centerY" secondItem="d8v-9q-N2R" secondAttribute="centerY" id="95x-qw-hi2"/>
                             <constraint firstItem="2cP-tK-hBN" firstAttribute="trailing" secondItem="jdH-9e-ucR" secondAttribute="trailing" constant="-20" id="BP8-3M-kZJ"/>
                             <constraint firstItem="ABT-kL-MiY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L8v-6W-ZOr"/>
                             <constraint firstItem="kcs-Vl-bgD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NIQ-Hb-9bQ"/>
@@ -265,10 +266,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kcs-Vl-bgD" secondAttribute="bottom" id="V9Y-vl-n1N"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ABT-kL-MiY" secondAttribute="bottom" id="Wdg-JT-xfg"/>
                             <constraint firstItem="jdH-9e-ucR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="XZW-yU-eGS"/>
-                            <constraint firstItem="d8v-9q-N2R" firstAttribute="centerX" secondItem="V7h-R2-ZUy" secondAttribute="centerX" id="YVg-Af-5Jm"/>
+                            <constraint firstItem="V7h-R2-ZUy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iR2-Ei-eSZ"/>
                             <constraint firstItem="ABT-kL-MiY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mYm-cx-uVa"/>
-                            <constraint firstItem="d8v-9q-N2R" firstAttribute="centerY" secondItem="V7h-R2-ZUy" secondAttribute="centerY" id="rWQ-Om-846"/>
-                            <constraint firstItem="V7h-R2-ZUy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s52-xL-XTg"/>
+                            <constraint firstItem="V7h-R2-ZUy" firstAttribute="centerX" secondItem="d8v-9q-N2R" secondAttribute="centerX" id="ucp-nQ-XQE"/>
                         </constraints>
                     </view>
                     <connections>
