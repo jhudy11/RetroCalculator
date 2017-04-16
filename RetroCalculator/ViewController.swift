@@ -12,7 +12,23 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var btnSound: AVAudioPlayer!
-
+    
+    enum Operation: String {
+        case Divide = "/"
+        case Multiply = "*"
+        case Subtract = "-"
+        case Add = "+"
+        case Empty = "Empty"
+    }
+    
+    var currentOperation = Operation.Empty
+    var runningNumber = ""
+    var leftValStr = ""
+    var rightValStr = ""
+    var result = ""
+    
+    @IBOutlet weak var lblOutputLabetOUTLET: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +48,29 @@ class ViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
+        
+        runningNumber += "\(sender.tag)"
+        lblOutputLabetOUTLET.text = runningNumber
+    }
+    
+    @IBAction func onDividePressed(sender: UIButton) {
+        processOperation(operation: .Divide)
+    }
+    
+    @IBAction func onMultiplyPressed(sender: UIButton) {
+        processOperation(operation: .Multiply)
+    }
+    
+    @IBAction func onSubtractPressed(sender: UIButton) {
+        processOperation(operation: .Subtract)
+    }
+    
+    @IBAction func onAddPressed(sender: UIButton) {
+        processOperation(operation: .Add)
+    }
+    
+    @IBAction func onEqualPressed(sender: UIButton) {
+        processOperation(operation: currentOperation)
     }
     
     func playSound() {
@@ -42,7 +81,63 @@ class ViewController: UIViewController {
         
         btnSound.play()
     }
-
+    
+    func processOperation(operation: Operation) {
+        if currentOperation != Operation.Empty {
+            
+            // User selected and operator, but then selected another operator without entering a number
+            if runningNumber != "" {
+                rightValStr = runningNumber
+                runningNumber = ""
+                
+                if currentOperation  == Operation.Multiply {
+                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Divide {
+                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Subtract {
+                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Add {
+                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                    
+                }
+                
+                leftValStr = result
+                lblOutputLabetOUTLET.text = result
+            }
+            
+            currentOperation = operation
+        } else {
+            
+            // This is the first time an operator has been pressed
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = operation
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
