@@ -12,6 +12,8 @@
 		49B766BE1EA351CE0021D89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B766BC1EA351CE0021D89A /* Main.storyboard */; };
 		49B766C01EA351CE0021D89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B766BF1EA351CE0021D89A /* Assets.xcassets */; };
 		49B766C31EA351CE0021D89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B766C11EA351CE0021D89A /* LaunchScreen.storyboard */; };
+		49B766CC1EA3C8230021D89A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49B766CB1EA3C8230021D89A /* btn.wav */; };
+		49B766CD1EA3C84E0021D89A /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49B766CA1EA3C8130021D89A /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		49B766BF1EA351CE0021D89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B766C21EA351CE0021D89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49B766C41EA351CE0021D89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B766CA1EA3C8130021D89A /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		49B766CB1EA3C8230021D89A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				49B766BF1EA351CE0021D89A /* Assets.xcassets */,
 				49B766C11EA351CE0021D89A /* LaunchScreen.storyboard */,
 				49B766C41EA351CE0021D89A /* Info.plist */,
+				49B766CA1EA3C8130021D89A /* Minecraft.ttf */,
+				49B766CB1EA3C8230021D89A /* btn.wav */,
 			);
 			path = RetroCalculator;
 			sourceTree = "<group>";
@@ -124,9 +130,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B766CD1EA3C84E0021D89A /* Minecraft.ttf in Resources */,
 				49B766C31EA351CE0021D89A /* LaunchScreen.storyboard in Resources */,
 				49B766C01EA351CE0021D89A /* Assets.xcassets in Resources */,
 				49B766BE1EA351CE0021D89A /* Main.storyboard in Resources */,
+				49B766CC1EA3C8230021D89A /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FV58CK5TAD;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ParanoidPenguinProductions.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FV58CK5TAD;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ParanoidPenguinProductions.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
