@@ -310,6 +310,7 @@
 				49B766C91EA351CE0021D89A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
